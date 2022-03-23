@@ -12,8 +12,9 @@
 # the additional setup, and require it from the spec files that actually need
 # it.
 #
-
+require "byebug"
 require "support/environment_variables"
+require "support/database"
 require "cookpad-performance"
 
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
