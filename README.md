@@ -33,7 +33,7 @@ Silence cached ActiveRecord database queries from the Rails application log. Mak
 
 Activate by setting an environment variable called `DISABLE_CACHED_QUERY_LOGGING=true`.
 
-See [the initializer file](/blob/main/config/initializers/disable_cached_query_logging.rb) for more information.
+See [the initializer file](config/initializers/disable_cached_query_logging.rb) for more information.
 
 ### n+1 detection in Rails logs
 
@@ -41,7 +41,7 @@ Receive warnings in the Rails application logs when an n+1 query is detected.
 
 Activate by setting an environment variable called `LOG_N_PLUS_ONE_QUERIES=true`.
 
-See [the initializer file](/blob/main/config/initializers/n_plus_one_detection.rb) for more information.
+See [the initializer file](config/initializers/n_plus_one_detection.rb) for more information.
 
 ### Profile mode
 
@@ -49,7 +49,7 @@ Run your Rails application in a production-like configuration of the development
 
 Activate by setting an environment variable called `PROFILE=true`.
 
-See [the initializer file](/blob/main/config/initializers/profile_mode.rb) for more information.
+See [the initializer file](config/initializers/profile_mode.rb) for more information.
 
 ### Rack Mini Profiler
 
