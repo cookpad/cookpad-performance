@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.homepage    = "https://github.com/cookpad/cookpad-performance"
   spec.summary     = "Rails app performance tools"
   spec.description = "Provides a set of performance tools for our Rails apps"
-    spec.license     = "MIT"
+  spec.license = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -23,14 +23,15 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency "prosopite", "~> 1.0"
-  spec.add_dependency "rails", ">= 7.0.2.3", "< 8"
   spec.add_dependency "rack-mini-profiler", "~> 2.3"
+  spec.add_dependency "rails", ">= 7.0.2.3", "< 8"
   spec.add_development_dependency "byebug", "~> 11.1"
   spec.add_development_dependency "rspec", "~> 3.10"
   spec.add_development_dependency "rubocop", "~> 1.26"
-  spec.add_development_dependency "rubocop-rspec", "~> 2.9"
-  spec.add_development_dependency "rubocop-rails", "~> 2.13"
   spec.add_development_dependency "rubocop-performance", "~> 1.13"
+  spec.add_development_dependency "rubocop-rails", "~> 2.13"
+  spec.add_development_dependency "rubocop-rspec", "~> 2.9"
   spec.add_development_dependency "sprockets", "~> 4.0"
   spec.add_development_dependency "uglifier", "~> 4.2"
+  spec.metadata["rubygems_mfa_required"] = "true"
 end

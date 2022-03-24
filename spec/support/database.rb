@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module TestDatabase
   LOG_FILENAME = "./log/test.log"
 

@@ -16,11 +16,11 @@ module TestApp
     config_value = args.pop
     config_name = args.pop
     test_app.configure do
-      if args.one?
-        receiver = config.public_send(args.first)
-      else
-        receiver = config
-      end
+      receiver = if args.one?
+                   config.public_send(args.first)
+                 else
+                   config
+                 end
       receiver.public_send(:"#{config_name}=", config_value)
     end
   end
