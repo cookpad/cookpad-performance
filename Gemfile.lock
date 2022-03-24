@@ -3,7 +3,7 @@ PATH
   specs:
     cookpad-performance (0.1.0)
       prosopite (~> 1.0.8)
-      rails (>= 6, < 8)
+      rails (>= 7.0.2.3, < 8)
 
 GEM
   remote: https://rubygems.org/
@@ -81,6 +81,7 @@ GEM
     diff-lcs (1.5.0)
     digest (3.1.0)
     erubi (1.10.0)
+    execjs (2.8.1)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -198,6 +199,8 @@ GEM
     timeout (0.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    uglifier (4.2.0)
+      execjs (>= 0.3.0, < 3)
     unicode-display_width (2.1.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
@@ -215,8 +218,10 @@ DEPENDENCIES
   rubocop-performance (~> 1.13.3)
   rubocop-rails (~> 2.13.2)
   rubocop-rspec (~> 2.9.0)
+  sprockets
   sprockets-rails
   sqlite3
+  uglifier
 
 BUNDLED WITH
    2.3.8
