@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "active_record"
+
 module TestDatabase
   LOG_FILENAME = "./log/test.log"
 
