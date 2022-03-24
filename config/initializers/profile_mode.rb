@@ -1,7 +1,4 @@
 Rails.application.configure do
-  # Switch settings to "production-like" for profiling
-  # and benchmarking the application locally. All changes you make to the app
-  # will require restart.
   if ENV["PROFILE"] == "true" && Rails.env.development?
     config.cache_classes = true
     config.eager_load = true

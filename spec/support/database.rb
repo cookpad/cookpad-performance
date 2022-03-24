@@ -24,9 +24,8 @@ module TestDatabase
   private
 
     def configure_active_record
-      ActiveRecord.async_query_executor = :global_thead_pool
       ActiveRecord::Base.logger = ActiveSupport::Logger.new(LOG_FILENAME)
-      ActiveRecord::Base.establish_connection(adapter: "sqlite3", database: ":memory:", pool: 4)
+      ActiveRecord::Base.establish_connection(adapter: "sqlite3", database: ":memory:")
     end
 end
 

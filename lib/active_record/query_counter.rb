@@ -35,7 +35,6 @@ module ActiveRecord
     def sql(event)
       return if INGORED_QUERY_PREFIXES.detect { |s| event.payload[:sql].start_with?(s) }
 
-      puts event.payload.inspect
       increment_counter(type: type_of_event(event))
     end
 

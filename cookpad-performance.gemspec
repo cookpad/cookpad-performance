@@ -22,15 +22,15 @@ Gem::Specification.new do |spec|
     Dir["{config,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   end
 
-  spec.add_dependency "prosopite", "~> 1.0.8"
+  spec.add_dependency "prosopite", "~> 1.0"
   spec.add_dependency "rails", ">= 7.0.2.3", "< 8"
-  spec.add_dependency "rack-mini-profiler", "~> 2.3.3"
-  spec.add_development_dependency "byebug", "~> 11.1.3"
-  spec.add_development_dependency "rspec", "~> 3.10.0"
-  spec.add_development_dependency "rubocop", "~> 1.26.0"
-  spec.add_development_dependency "rubocop-rspec", "~> 2.9.0"
-  spec.add_development_dependency "rubocop-rails", "~> 2.13.2"
-  spec.add_development_dependency "rubocop-performance", "~> 1.13.3"
-  spec.add_development_dependency "sprockets"
-  spec.add_development_dependency "uglifier"
+  spec.add_dependency "rack-mini-profiler", "~> 2.3"
+  spec.add_development_dependency "byebug", "~> 11.1"
+  spec.add_development_dependency "rspec", "~> 3.10"
+  spec.add_development_dependency "rubocop", "~> 1.26"
+  spec.add_development_dependency "rubocop-rspec", "~> 2.9"
+  spec.add_development_dependency "rubocop-rails", "~> 2.13"
+  spec.add_development_dependency "rubocop-performance", "~> 1.13"
+  spec.add_development_dependency "sprockets", "~> 4.0"
+  spec.add_development_dependency "uglifier", "~> 4.2"
 end
