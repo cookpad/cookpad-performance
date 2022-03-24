@@ -1,5 +1,5 @@
-Rails.application.configure do
-  if ENV["PROFILE"] == "true" && Rails.env.development?
+if ENV["PROFILE"] == "true" && Rails.env.development?
+  Rails.application.configure do
     config.cache_classes = true
     config.eager_load = true
 
