@@ -25,7 +25,7 @@ Log the total number of unique queries, cached queries, and async queries at the
 
 Activate by setting an environment variable called `LOG_DB_QUERY_COUNT=true`.
 
-See [the initializer file](/blob/main/config/initializers/active_record_query_counter.rb) for more information.
+See [the initializer file](config/initializers/active_record_query_counter.rb) for more information.
 
 ### Disable cached query logging
 
