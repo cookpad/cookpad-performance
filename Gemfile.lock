@@ -3,6 +3,7 @@ PATH
   specs:
     cookpad-performance (0.1.0)
       prosopite (~> 1.0.8)
+      rack-mini-profiler (~> 2.3.3)
       rails (>= 7.0.2.3, < 8)
 
 GEM
@@ -120,6 +121,8 @@ GEM
     prosopite (1.0.8)
     racc (1.6.0)
     rack (2.2.3)
+    rack-mini-profiler (2.3.3)
+      rack (>= 1.2.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (7.0.2.3)
