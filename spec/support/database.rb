@@ -3,8 +3,6 @@
 require "active_record"
 
 module TestDatabase
-  LOG_FILENAME = "./log/test.log"
-
   def load_schema!
     configure_active_record
     ActiveRecord::Base.connection.instance_eval do
@@ -27,7 +25,7 @@ module TestDatabase
   private
 
     def configure_active_record
-      ActiveRecord::Base.logger = ActiveSupport::Logger.new(LOG_FILENAME)
+      ActiveRecord::Base.logger = ActiveSupport::Logger.new($stdout)
       ActiveRecord::Base.establish_connection(adapter: "sqlite3", database: ":memory:")
     end
 end
