@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop-performance", "~> 1.13"
   spec.add_development_dependency "rubocop-rails", "~> 2.13"
   spec.add_development_dependency "rubocop-rspec", "~> 2.9"
-  spec.add_development_dependency "sprockets", "~> 4.0"
+  spec.add_development_dependency "sprockets-rails"
   spec.add_development_dependency "uglifier", "~> 4.2"
   spec.metadata["rubygems_mfa_required"] = "true"
 end
