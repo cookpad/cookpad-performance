@@ -33,6 +33,5 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
       run: bundle exec rake
-    # Disable until we add our own Rubocop style guide
-    # - name: Lint code
-    #   run: bundle exec rubocop
+    - name: Lint code
+      run: bundle exec rubocop
