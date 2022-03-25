@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   end
   spec.add_dependency "prosopite", "~> 1.0"
   spec.add_dependency "rack-mini-profiler", "~> 2.3"
-  spec.add_dependency "rails", ">= 7.0.2.3", "< 8"
+  spec.add_dependency "rails", "~> 7.0"
   spec.add_development_dependency "byebug", "~> 11.1"
   spec.add_development_dependency "rspec", "~> 3.10"
   spec.add_development_dependency "rubocop", "~> 1.26"

@@ -4,7 +4,7 @@ PATH
     cookpad-performance (0.1.0)
       prosopite (~> 1.0)
       rack-mini-profiler (~> 2.3)
-      rails (>= 7.0.2.3, < 8)
+      rails (~> 7.0)
 
 GEM
   remote: https://rubygems.org/
