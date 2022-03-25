@@ -1,0 +1,24 @@
+require: rubocop-rails
+
+Rails/ActionFilter:
+  Enabled: false
+
+Rails/Delegate:
+  Enabled: false
+
+Rails/Output:
+  Include:
+    - app/**/*.rb
+    - config/**/*.rb
+    - db/**/*.rb
+    - lib/**/*.rb
+    - spec/**/*.rb
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/RequestReferer:
+  EnforcedStyle: referrer
+
+Rails/DynamicFindBy:
+  Enabled: false

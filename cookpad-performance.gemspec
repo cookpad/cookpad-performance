@@ -1,5 +1,6 @@
 require_relative "lib/cookpad/performance/version"
 
+# rubocop:disable Metrics/BlockLength
 Gem::Specification.new do |spec|
   spec.name        = "cookpad-performance"
   spec.version     = Cookpad::Performance::VERSION
@@ -21,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir["{config,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   end
+  spec.required_ruby_version = ">= 2.7.0"
   spec.add_dependency "prosopite", "~> 1.0"
   spec.add_dependency "rack-mini-profiler", "~> 2.3"
   spec.add_dependency "rails", "~> 7.0"
@@ -30,8 +32,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop-performance", "~> 1.13"
   spec.add_development_dependency "rubocop-rails", "~> 2.13"
   spec.add_development_dependency "rubocop-rspec", "~> 2.9"
-  spec.add_development_dependency "sqlite3"
   spec.add_development_dependency "sprockets-rails"
+  spec.add_development_dependency "sqlite3"
   spec.add_development_dependency "uglifier", "~> 4.2"
   spec.metadata["rubygems_mfa_required"] = "true"
 end
+# rubocop:enable Metrics/BlockLength

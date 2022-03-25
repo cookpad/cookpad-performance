@@ -1,0 +1,31 @@
+inherit_from:
+  - https://raw.githubusercontent.com/cookpad/global-style-guides/main/.rubocop.yml
+
+require:
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.7
+  TargetRailsVersion: 5.2
+  Exclude:
+    - config/unicorn/**/*
+    - db/schema.rb
+    - db/migrate/*
+    - vendor/**/*
+    - node_modules/**/*
+    - config/deploy.rb
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - beta
+    - staging
+    - development
+    - test
+
+Rails/HttpPositionalArguments:
+  Exclude:
+    -  spec/requests/api/**/*
+
+RSpec:
+  Enabled: false

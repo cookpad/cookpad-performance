@@ -2,6 +2,7 @@
 
 require "active_record"
 
+# rubocop:disable Rails/ApplicationRecord
 module TestDatabase
   def load_schema!
     configure_active_record
@@ -29,6 +30,7 @@ module TestDatabase
       ActiveRecord::Base.establish_connection(adapter: "sqlite3", database: ":memory:")
     end
 end
+# rubocop:enable Rails/ApplicationRecord
 
 RSpec.configure do |config|
   config.include(TestDatabase, database: true)
