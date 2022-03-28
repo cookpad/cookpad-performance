@@ -2,6 +2,14 @@
 
 Adds a selection of tools to make performance troubleshooting and profiling easier in development.
 
+## Philosophy
+
+This gem should provide a set of plug-and-play performance monitoring amd troubleshooting tools for use in development and test environments.
+
+Each tool should sit behind a feature toggle, and should be explicitly enabled through the use of environment variables.
+
+The gem should not make any changes to the functioning and performance of the application unless a specific feature has explicitly been enabled. This helps us to provide helpful tools that will stay out of your way unless your require them.
+
 ## Installation
 
 Add this line to your application's Gemfile:
