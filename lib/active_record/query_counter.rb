@@ -14,17 +14,20 @@ module ActiveRecord
     private_constant :LOG_TEMPLATE
 
     INGORED_QUERY_PREFIXES = [
-      "SHOW FULL FIELDS",
-      "SELECT `schema_migrations`.`version`",
-      "SET NAME",
-      "SELECT table_name",
-      "SELECT column_name",
-      "DROP TABLE",
+      "BEGIN",
+      "COMMIT",
       "CREATE TABLE",
+      "DROP TABLE",
       "PRAGMA",
+      "SELECT column_name",
       "SELECT sqlite_version(*)",
       "SELECT name FROM sqlite_master",
-      "SELECT sql FROM"
+      "SELECT sql FROM",
+      "SELECT table_name",
+      "SELECT `schema_migrations`.`version`",
+      "SET  @@SESSION.sql_mode",
+      "SET NAME",
+      "SHOW FULL FIELDS"
     ].freeze
     private_constant :INGORED_QUERY_PREFIXES
 

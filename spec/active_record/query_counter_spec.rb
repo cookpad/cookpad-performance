@@ -37,10 +37,12 @@ RSpec.describe "ActiveRecord::QueryCounter", :database do
   end
 
   it "logs the number of async queries" do
-    skip "Don't know how to get async working in test"
+    skip "Unsure how to set up to test this properly"
+    build_test_app
     load_schema!
+
     test_model.create
-    test_model.all.load_async
+    test_model.where(nil).load_async.size
     logged_output = ActiveRecord::QueryCounter.current.report_counts
 
     expect(logged_output).to include("Async: 1")

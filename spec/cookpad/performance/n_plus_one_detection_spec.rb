@@ -1,4 +1,5 @@
 require "spec_helper"
+require "prosopite"
 
 RSpec.describe "N+1 Detection", :database do
   before do
