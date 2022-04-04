@@ -28,6 +28,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rack-mini-profiler"
   spec.add_dependency "rails", ">= 7.0"
   spec.add_development_dependency "byebug", "~> 11.1"
+
+  spec.add_development_dependency "pronto", "~> 0.11"
+  spec.add_development_dependency "pronto-rubocop", "~> 0.11"
   spec.add_development_dependency "rspec", "~> 3.10"
   spec.add_development_dependency "rubocop", "~> 1.26"
   spec.add_development_dependency "rubocop-performance", "~> 1.13"
