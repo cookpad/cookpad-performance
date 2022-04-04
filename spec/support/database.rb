@@ -26,6 +26,7 @@ module TestDatabase
   private
 
     def configure_active_record
+      FileUtils.mkdir("./log") unless Dir.exist?("./log")
       ActiveRecord::Base.logger = ActiveSupport::Logger.new("./log/test.log")
       ActiveRecord::Base.establish_connection(adapter: "sqlite3", database: ":memory:")
     end
