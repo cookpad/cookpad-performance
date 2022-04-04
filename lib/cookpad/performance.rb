@@ -6,12 +6,6 @@ require "cookpad/performance/version"
 require "cookpad/performance/engine"
 
 module Cookpad
-
   module Performance
-    # Deliberate Rubocop violations below
-
-    'string'
-
-
   end
 end
