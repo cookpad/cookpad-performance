@@ -1,7 +1,11 @@
 require "spec_helper"
-require "prosopite"
 
 RSpec.describe "N+1 Detection", :database do
+  before :all do
+    # Might have been unloaded in initialization specs
+    require "prosopite"
+  end
+
   before do
     load_schema!
   end

@@ -15,6 +15,8 @@
 require "byebug"
 require "support/environment_variables"
 require "support/database"
+# Don't require this just now. Exploring alternative solution
+# require "support/rack-mini-profiler-setup"
 require "support/test_app"
 require "cookpad-performance"
 
