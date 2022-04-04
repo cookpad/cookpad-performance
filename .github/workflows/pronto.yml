@@ -5,6 +5,9 @@ jobs:
   pronto:
 
     runs-on: ubuntu-latest
+    strategy:
+          matrix:
+            ruby-version: ['3.0']
 
     steps:
       - name: Checkout code
