@@ -2,7 +2,9 @@ module NPlusOneDetection
   extend ActiveSupport::Concern
 
   included do
-    around_action :n_plus_one_detection, if: -> { Cookpad::Performance.log_n_plus_one_queries? }
+    around_action :n_plus_one_detection, if: -> {
+      Cookpad::Performance.log_n_plus_one_queries? || Cookpad::Performance.raise_n_plus_one_queries?
+    }
   end
 
   private
