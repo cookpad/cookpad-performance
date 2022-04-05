@@ -1,4 +1,4 @@
-if ENV["PROFILE"] == "true" && Rails.env.development?
+if Cookpad::Performance.profile? && Rails.env.development?
   Rails.application.configure do
     config.cache_classes = true
     config.eager_load = true
