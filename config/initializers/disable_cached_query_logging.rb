@@ -1,4 +1,4 @@
-if !Rails.env.production? && ENV["DISABLE_CACHED_QUERY_LOGGING"] == "true"
+if !Rails.env.production? && Cookpad::Performance.disable_cached_query_logging?
   require "disable_cached_query_logging"
   ActiveSupport::Logger.prepend DisableCachedQueryLogging
 end
