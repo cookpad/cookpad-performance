@@ -1,4 +1,4 @@
-if Cookpad::Performance.log_db_query_count?
+if ENV["LOG_DB_QUERY_COUNT"] == "true"
   require "active_record/query_counter"
   ActiveSupport::Notifications.subscribe(/sql/, ActiveRecord::QueryCounter.current)
   ActionController::Base.class_eval do

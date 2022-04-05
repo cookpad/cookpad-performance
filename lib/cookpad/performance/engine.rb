@@ -6,7 +6,7 @@ module Cookpad
       config.to_prepare do
         return unless Rails.env.development?
 
-        if Performance.log_n_plus_one_queries? || Performance.raise_n_plus_one_queries?
+        if ENV["LOG_N_PLUS_ONE_QUERIES"] == "true" || ENV["RAISE_N_PLUS_ONE_QUERIES"] == "true"
           ActionController::Base.class_eval do
             include NPlusOneDetection
           end

@@ -15,10 +15,9 @@ RSpec.describe NPlusOneDetection, type: :controller, database: true do
 
   it "calls Prosopite around a controller action" do
     require "prosopite"
-
+    set_environment_variable("LOG_N_PLUS_ONE_QUERIES", "true")
     load_schema!
 
-    expect(Cookpad::Performance).to receive(:log_n_plus_one_queries?).and_return(true)
     expect(Prosopite).to receive(:scan)
     expect(Prosopite).to receive(:finish)
 
