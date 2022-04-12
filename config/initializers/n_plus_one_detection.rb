@@ -1,4 +1,4 @@
-if ENV["LOG_N_PLUS_ONE_QUERIES"] == "true" || ENV["RAISE_N_PLUS_ONE_QUERIES"] == "true"
+if ENV.key?("LOG_N_PLUS_ONE_QUERIES") || ENV.key?("RAISE_N_PLUS_ONE_QUERIES")
   require "prosopite"
 
   if Rails.env.development? || Rails.env.test?

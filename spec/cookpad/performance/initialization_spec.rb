@@ -47,9 +47,9 @@ RSpec.describe "Cookpad::Performance::Initialization" do
     end
   end
 
-  context "when LOG_N_PLUS_ONE_QUERIES is false" do
+  context "when LOG_N_PLUS_ONE_QUERIES is not set" do
     it "doesn't load Prosopite" do
-      set_environment_variable("LOG_N_PLUS_ONE_QUERIES", "false")
+      ENV.delete("LOG_N_PLUS_ONE_QUERIES")
 
       refresh_object_space!
       load("config/initializers/n_plus_one_detection.rb")
