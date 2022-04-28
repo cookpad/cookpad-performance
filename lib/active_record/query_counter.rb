@@ -49,13 +49,11 @@ module ActiveRecord
       LOG_TEMPLATE % counter.merge({ total: counter.values.sum })
     end
 
-    protected
-
+    private
+    
       def counter
         @_counter ||= Hash.new { |hash, key| hash[key] = 0 }
       end
-
-    private
 
       def increment_counter(type:)
         counter[type] += 1
