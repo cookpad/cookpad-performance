@@ -59,9 +59,5 @@ Activate by setting an environment variable called `PROFILE=true`.
 
 See [the initializer file](config/initializers/profile_mode.rb) for more information.
 
-### Rack Mini Profiler
-
-Includes the [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler) gem.
-
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
