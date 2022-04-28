@@ -16,7 +16,9 @@ require "byebug"
 require "support/environment_variables"
 require "support/database"
 require "support/test_app"
+require "support/initialization_helpers"
 require "cookpad-performance"
+
 
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
