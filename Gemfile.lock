@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cookpad-performance (0.2.0)
+    cookpad-performance (0.2.1)
       prosopite (~> 1.0)
       rails (>= 7.0)
 
