@@ -47,7 +47,7 @@ See [the initializer file](config/initializers/disable_cached_query_logging.rb) 
 
 Receive warnings in the Rails application logs when an n+1 query is detected.
 
-Activate by setting an environment variable called `LOG_N_PLUS_ONE_QUERIES=true`.
+Activate by setting an environment variable called `LOG_N_PLUS_ONE_QUERIES=true`, or `RAISE_N_PLUS_ONE_QUERIES=true` to raise exceptions when an instance is detected.
 
 See [the initializer file](config/initializers/n_plus_one_detection.rb) for more information.
 
