@@ -37,9 +37,11 @@ See [the initializer file](config/initializers/active_record_query_counter.rb) f
 
 ### Disable cached query logging
 
-Silence cached ActiveRecord database queries from the Rails application log. Makes it easier to see which unique queries are being executed in the database.
+Silence cached ActiveRecord database queries from the Rails application log. Makes it easier to see which unique queries are being executed in the database. 
 
 Activate by setting an environment variable called `DISABLE_CACHED_QUERY_LOGGING=true`.
+
+_Note: This should be used with discretion, to declutter very noisy logs. Cached queries are also expensive and should not be ignored_
 
 See [the initializer file](config/initializers/disable_cached_query_logging.rb) for more information.
 
