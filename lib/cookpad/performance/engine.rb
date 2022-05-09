@@ -8,8 +8,7 @@ module Cookpad
            (ENV["LOG_N_PLUS_ONE_QUERIES"] == "true" ||
              ENV["RAISE_N_PLUS_ONE_QUERIES"] == "true")
 
-          require Cookpad::Performance::Engine.root.join("app/controllers/concerns/n_plus_one_detection")
-          ActionController::Base.include(NPlusOneDetection)
+          ActionController::Base.include(Cookpad::Performance::NPlusOneDetection)
         end
       end
     end
