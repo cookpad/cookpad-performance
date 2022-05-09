@@ -4,8 +4,8 @@ require_relative "lib/cookpad/performance/version"
 Gem::Specification.new do |spec|
   spec.name        = "cookpad-performance"
   spec.version     = Cookpad::Performance::VERSION
-  spec.authors     = ["Bodacious"]
-  spec.email       = ["gavin@gavinmorrice.com"]
+  spec.authors     = ["Cookpad Inc."]
+  spec.email       = ["kaihatsu@cookpad.com"]
   spec.homepage    = "https://github.com/cookpad/cookpad-performance"
   spec.summary     = "Rails app performance tools"
   spec.description = "Provides a set of performance tools for our Rails apps"
@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.7.0"
 
   spec.add_dependency "prosopite", "~> 1.0"
-  spec.add_dependency "rails", ">= 7.0"
+  spec.add_dependency "rails", ">= 5.0"
 
   spec.add_development_dependency "byebug", "~> 11.1"
   spec.add_development_dependency "pronto", "~> 0.11"
