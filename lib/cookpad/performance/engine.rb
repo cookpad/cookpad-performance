@@ -7,7 +7,9 @@ module Cookpad
         if !Rails.env.production? &&
            (ENV["LOG_N_PLUS_ONE_QUERIES"] == "true" ||
              ENV["RAISE_N_PLUS_ONE_QUERIES"] == "true")
-          ActionController::Base.include(Cookpad::Performance::NPlusOneDetection)
+
+          require Cookpad::Performance::Engine.root.join("app/controllers/concerns/n_plus_one_detection")
+          ActionController::Base.include(NPlusOneDetection)
         end
       end
     end
