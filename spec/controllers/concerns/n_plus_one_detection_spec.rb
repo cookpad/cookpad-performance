@@ -1,9 +1,9 @@
 require "rails_helper"
-require "./app/controllers/concerns/n_plus_one_detection"
+require "./app/controllers/concerns/cookpad/performance/n_plus_one_detection"
 
-RSpec.describe NPlusOneDetection, type: :controller, database: true do
+RSpec.describe Cookpad::Performance::NPlusOneDetection, type: :controller, database: true do
   controller(ActionController::Base) do
-    include NPlusOneDetection
+    include Cookpad::Performance::NPlusOneDetection
     include TestDatabase
     def index
       test_model.find_by(user_id: 1)
