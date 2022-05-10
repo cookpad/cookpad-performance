@@ -1,5 +1,5 @@
 require "rails_helper"
-require "./app/controllers/concerns/cookpad/performance/n_plus_one_detection"
+require "cookpad/performance/n_plus_one_detection"
 
 RSpec.describe Cookpad::Performance::NPlusOneDetection, type: :controller, database: true do
   controller(ActionController::Base) do
