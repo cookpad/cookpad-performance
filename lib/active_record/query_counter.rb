@@ -50,7 +50,7 @@ module ActiveRecord
     end
 
     private
-    
+
       def counter
         @_counter ||= Hash.new { |hash, key| hash[key] = 0 }
       end
