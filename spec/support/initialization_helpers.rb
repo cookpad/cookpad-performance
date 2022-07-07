@@ -1,5 +1,4 @@
 module InitializationHelpers
-
   private
 
     def unload_prosopite
