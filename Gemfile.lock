@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cookpad-performance (0.3.2)
+    cookpad-performance (0.3.3)
       prosopite (~> 1.0)
       rails (>= 6.1)
 
@@ -167,7 +167,7 @@ GEM
     pronto-rubocop (0.11.1)
       pronto (~> 0.11.0)
       rubocop (>= 0.63.1, < 2.0)
-    prosopite (1.0.8)
+    prosopite (1.0.9)
     public_suffix (4.0.6)
     racc (1.6.0)
     rack (2.2.4)
@@ -258,11 +258,11 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
-    strscan (3.0.2)
+    strscan (3.0.3)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     thor (1.2.1)
-    timeout (0.2.0)
+    timeout (0.3.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
